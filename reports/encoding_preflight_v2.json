@@ -1,0 +1,15 @@
+{
+  "checked": 11043,
+  "total": 11043,
+  "max_sequence_length": 2861,
+  "rejected_records": {},
+  "train_manifest_sha256": "11e40f4cf078a4a84bea5cd1482fb69a0095d698a90362e13ad96399b042ae04",
+  "seconds": 273.21955823898315,
+  "device": "cpu",
+  "checks": [
+    "image patch geometry",
+    "assistant prefix",
+    "complete label token roundtrip",
+    "sequence length"
+  ]
+}

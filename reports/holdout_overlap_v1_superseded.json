@@ -1,0 +1,169 @@
+{
+  "evaluation_records": 24,
+  "exact_containment_flagged": 6,
+  "shingle_containment_ge_0_85": 8,
+  "records": {
+    "yJJ6KRvgQf9sXA498F6Q": {
+      "script": "arabic",
+      "max_5word_shingle_containment": 1.0,
+      "source_train_id": "pQw2P0FaMq0FR0NZpSAA",
+      "exact_contained_in_training": [
+        "pQw2P0FaMq0FR0NZpSAA"
+      ]
+    },
+    "bLwlFKWxq0WNGoxuAQhq": {
+      "script": "arabic",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    },
+    "TrJ2cofsY5citgDYsyaC": {
+      "script": "arabic",
+      "max_5word_shingle_containment": 1.0,
+      "source_train_id": "AZWD8oGbpJFCV9p1TDHc",
+      "exact_contained_in_training": [
+        "AZWD8oGbpJFCV9p1TDHc",
+        "cOrN7gLYvbMOtGijUfDy",
+        "7R7KEa915PNQfB4oqwyW"
+      ]
+    },
+    "uuH7QwPhOiiEfGc3m0Ut": {
+      "script": "arabic",
+      "max_5word_shingle_containment": 1.0,
+      "source_train_id": "adMnMdV8TzNGAxyM00qh",
+      "exact_contained_in_training": [
+        "PgCypXBnxCXNupnmgOIR",
+        "adMnMdV8TzNGAxyM00qh",
+        "N3OdIIYpJg6fk0OsFgE4",
+        "nCTHkjSjaWUcdZDzJnbI"
+      ]
+    },
+    "vbdJlOIJ1xc9U2NOUcXa": {
+      "script": "arabic",
+      "max_5word_shingle_containment": 1.0,
+      "source_train_id": "cgh1dB8bUtxhDDWZMHUH",
+      "exact_contained_in_training": [
+        "cgh1dB8bUtxhDDWZMHUH"
+      ]
+    },
+    "wlQTWUGhyEGNy49RwamB": {
+      "script": "arabic",
+      "max_5word_shingle_containment": 0.881578947368421,
+      "source_train_id": "RZnUuph6XehBldGK0ciq",
+      "exact_contained_in_training": []
+    },
+    "RoQAROGy9xws0QblCPNI": {
+      "script": "arabic",
+      "max_5word_shingle_containment": 0.967741935483871,
+      "source_train_id": "KyVP0Vtu4STl1kX01pyy",
+      "exact_contained_in_training": []
+    },
+    "jIFWCinWNqOldUwbAZWH": {
+      "script": "arabic",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    },
+    "YXLbsZeuoIQQjRJOsZGY": {
+      "script": "arabic",
+      "max_5word_shingle_containment": 1.0,
+      "source_train_id": "1YyrD0gcNBAo1UEHkVQd",
+      "exact_contained_in_training": [
+        "1YyrD0gcNBAo1UEHkVQd"
+      ]
+    },
+    "YckljyqNmZIMQxvNTggJ": {
+      "script": "arabic",
+      "max_5word_shingle_containment": 1.0,
+      "source_train_id": "tTJ8SMqnF7YpUkjrDhIk",
+      "exact_contained_in_training": [
+        "tTJ8SMqnF7YpUkjrDhIk"
+      ]
+    },
+    "Qj0IdrFJcXUkx6CIl1ez": {
+      "script": "arabic",
+      "max_5word_shingle_containment": 0.65,
+      "source_train_id": "hq3C7lWN64jepMyJD5Ij",
+      "exact_contained_in_training": []
+    },
+    "HGQbCOjRWpUmJ3XJ03KD": {
+      "script": "arabic",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    },
+    "latin_970fce735f7f96c6f12703_0": {
+      "script": "latin",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    },
+    "latin_37272b70cdedd9a81a38fa_0": {
+      "script": "latin",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    },
+    "latin_080fe958ed28534c3b7823_0": {
+      "script": "latin",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    },
+    "latin_8b604c633064a62633240b_0": {
+      "script": "latin",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    },
+    "latin_0c9ff3c50f06ebc726e83a_0": {
+      "script": "latin",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    },
+    "latin_9a819b6058f02972e897bb_0": {
+      "script": "latin",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    },
+    "latin_6c2825e759d1d2aff63f94_0": {
+      "script": "latin",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    },
+    "latin_9fc5bca0bf3ab3056b6ff7_0": {
+      "script": "latin",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    },
+    "latin_765c9deaf1a73c8e147ea4_0": {
+      "script": "latin",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    },
+    "latin_242cc4aa69ac2568e49bb9_0": {
+      "script": "latin",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    },
+    "latin_0e1b661c03c22638a536f8_0": {
+      "script": "latin",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    },
+    "latin_c38db29debb11a4dd888d8_0": {
+      "script": "latin",
+      "max_5word_shingle_containment": 0,
+      "source_train_id": null,
+      "exact_contained_in_training": []
+    }
+  },
+  "limitation": "Substring and shingle diagnostics do not prove original-book independence."
+}

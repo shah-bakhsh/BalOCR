@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-10",
+  "base_model": "PaddlePaddle/PaddleOCR-VL-1.6",
+  "hardware": "NVIDIA TITAN X Pascal 12 GB",
+  "pilot_optimizer_steps_completed": 40,
+  "pilot_is_release_model": false,
+  "v1_full_run_optimizer_steps_completed_before_failure": 21,
+  "v1_diagnostics_superseded": true,
+  "v2_full_training_launched": false,
+  "full_model_training_complete": false,
+  "current_blocker": "CUDA driver initialization failed; NVML reports GPU1 Unknown Error",
+  "fresh_allocation_attempts": [
+    "healthy GPU UUID with PCI_BUS_ID",
+    "PCI index 0 with PCI_BUS_ID"
+  ],
+  "fresh_allocation_successes": 0,
+  "administrator_access_available": false,
+  "server_reset_or_reboot_performed_by_project": false,
+  "trained_release_weights_published": false,
+  "adaption_credits_used": 0
+}

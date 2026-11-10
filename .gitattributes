@@ -1,3 +1,5 @@
 * text=auto eol=lf
 # Preserve downloaded font files and license evidence byte-for-byte.
 assets/fonts/* -text -whitespace
+# Keep the frozen experiment configuration identical to the published SHA256.
+config/experiment-v2.json -text

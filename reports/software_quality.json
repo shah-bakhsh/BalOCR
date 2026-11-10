@@ -1,7 +1,9 @@
 {
-  "tests_passed": 21,
-  "independent_source_review": "no_remaining_verified_P0_P2",
+  "tests_passed": 31,
+  "independent_source_review": "v2 core code and manifest overlap audit completed; attribution downloader finding addressed",
+  "download_verification": "31-test suite plus independent complete public download and published overlay attribution hashes",
   "native_speaker_certified": false,
+  "full_model_training_complete": false,
   "real_latin_scan_benchmark": false,
   "arabic_unseen_book_benchmark": false
 }

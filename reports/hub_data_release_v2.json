@@ -1,0 +1,82 @@
+{
+  "phase": "complete",
+  "commit": "42bd2ed2902bd3df734ea993cafbc8f55ad4fa01",
+  "url": "https://huggingface.co/datasets/shah-bakhsh/BalDataset/commit/42bd2ed2902bd3df734ea993cafbc8f55ad4fa01",
+  "version": 2,
+  "training_records": 11043,
+  "train_by_script": {
+    "arabic": 10205,
+    "latin": 838
+  },
+  "evaluation_records": 48,
+  "eval_by_script": {
+    "arabic": 24,
+    "latin": 24
+  },
+  "arabic_long_evaluation_records": 12,
+  "holdout_related_exclusions": 60,
+  "source_book_independence_verified": false,
+  "real_latin_scan_pairs": 0,
+  "overlap_rule": "Exact images, NFC whitespace equality, bidirectional full-text containment for >=10words, or >=85%five-word-shingle containment relative to smaller record.",
+  "configuration_sha256": "c1ba0c7a8e55048ff9dcda32be6d52f448094735a5a99b0d943eaa3a501570b7",
+  "train_manifest_sha256": "11e40f4cf078a4a84bea5cd1482fb69a0095d698a90362e13ad96399b042ae04",
+  "supersedes": "v1 diagnostic split contained cropped references in longer training paragraphs; use v2 manifests.",
+  "base_revision": "7225c1b7fca31f66df02d9bb8d4f643530c36326",
+  "base_manifest_path": "ocr/training_parts.json",
+  "base_archive_sha256": "d5596bd7e227f48a2932283d7c61979719c3217a790f4191ad215604b8f2a76c",
+  "overlay_path": "ocr/v2/balocr-v2-overlay.zip",
+  "overlay_sha256": "076c41e13c53d5c3eaa092d8c2acd8cfdab6f08896b4a3fde41ebc30519248ea",
+  "overlay_bytes": 10730586,
+  "provenance_files": [
+    {
+      "path": "SOURCES.json",
+      "sha256": "7d0426c8b738851cfa7cd348f41247a2f9fcc34ac2037ea7d089d1d07d462da9"
+    },
+    {
+      "path": "source_metadata/README.txt",
+      "sha256": "5651340266b12606ac94aa4838bc5a14570f134381f1e495c71740495605fc6d"
+    },
+    {
+      "path": "source_metadata/dataset_info.json",
+      "sha256": "9d408b953b07f473e6387925a9993c44b9a51c435194f75ff6049fc0df0c1552"
+    },
+    {
+      "path": "source_metadata/latin_source_documents.jsonl",
+      "sha256": "1aa76471efb276c259c5bdc77efec634bdca45db19fb03cefbec66f20e0aa2b4"
+    },
+    {
+      "path": "source_metadata/wowa_iran_balochi_coastal__citation.txt",
+      "sha256": "24e1ca11c1c166774b88a402a31fb1bb9ee8fdce278a7c33e2bce5c14534f878"
+    },
+    {
+      "path": "source_metadata/wowa_iran_balochi_koroshi__citation.txt",
+      "sha256": "84f1516162ada807b37da42ca502a69ddd1182ca2305692fa5a543af4edf1749"
+    },
+    {
+      "path": "source_metadata/wowa_iran_balochi_turkmen__citation.txt",
+      "sha256": "442f71b6293c9cb774bd2c878784596a5c2bb490d7aa770e8dde5eb0bc026dc8"
+    },
+    {
+      "path": "assets/fonts/NotoSans-OFL.txt",
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a"
+    },
+    {
+      "path": "assets/fonts/NotoSans.ttf",
+      "sha256": "bfb7bb691513f12e734dc346c03a03f784912432d7e3fa8e56efcf906fe86b3d"
+    },
+    {
+      "path": "assets/fonts/NotoSerif-OFL.txt",
+      "sha256": "cee9892f9f0cc8fe882c9e9537ee6a89621d86ee7ceaf70b02e2b2b1c25c061a"
+    },
+    {
+      "path": "assets/fonts/NotoSerif.ttf",
+      "sha256": "4d8e6761424656867019081a1a01336f3cb086982682698714054fc33f782713"
+    },
+    {
+      "path": "assets/fonts/SOURCES.json",
+      "sha256": "697a4e189286c7467ebef64326a0122942787d344f3dbb8a26735650e71d9f55"
+    }
+  ],
+  "anonymous_overlay_http": 200,
+  "all_provenance_file_hashes": "PASS"
+}

@@ -1,0 +1,18 @@
+{
+  "phase": "complete",
+  "commit": "9446db1014b1bc788c0eacbfba9bcd653392362d",
+  "url": "https://huggingface.co/datasets/shah-bakhsh/BalDataset/commit/9446db1014b1bc788c0eacbfba9bcd653392362d",
+  "archive_sha256": "c1ecdbfb0e1f09c7058d7d4c25a43d1e5cbc311107cbbc6e81a0d9286717c26a",
+  "archive_bytes": 491991763,
+  "parts": 30,
+  "canonical_pairs": 11195,
+  "independent_linux_download": {
+    "revision": "9446db1014b1bc788c0eacbfba9bcd653392362d",
+    "training_records": 11043,
+    "evaluation_records": 48,
+    "checksums": "PASS",
+    "archive_sha256": "c1ecdbfb0e1f09c7058d7d4c25a43d1e5cbc311107cbbc6e81a0d9286717c26a",
+    "archive_bytes": 491991763
+  },
+  "anonymous_manifest_http": 200
+}

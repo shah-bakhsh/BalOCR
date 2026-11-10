@@ -64,6 +64,9 @@ def main():
                 except ValueError as exc:
                     rejected[row['id']]=str(exc);continue
                 usable+=1
+                (output/'current_example.json').write_text(json.dumps(dict(id=row['id'],image=row['image'],
+                    tokens=len(labels),image_grid=batch['image_grid_thw'].tolist(),
+                    pixel_shape=list(batch['pixel_values'].shape),optimizer_step=step,microbatch=micro+1),indent=2),encoding='utf8')
                 batch['labels']=torch.tensor([labels],dtype=torch.long)
                 batch=batch.to(model.device)
                 loss=model(**batch,use_cache=False).loss

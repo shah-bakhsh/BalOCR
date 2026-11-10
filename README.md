@@ -2,6 +2,10 @@
 
 Balochi printed-text OCR in Arabic and Latin scripts. This project prepares real image/transcription pairs, adds explicitly synthetic printed Latin images, and adapts a pretrained vision model. It is a research development release; it does not promise perfect OCR or native-speaker certification.
 
+## Current experiment status
+
+The small 40-step hardware pilot completed. The first larger run stopped after 21 steps with a native projector shape error; fresh CUDA processes then failed to initialize and NVML listed only one of the previously available two GPUs. Isolating the healthy GPU by UUID also failed to allocate a CUDA tensor. Full training and release-quality evaluation are **incomplete**, and no trained BalOCR release weights have been published. See [training status](reports/training_status.json). The corrected v2 recipe below removes partial-text overlap missed by the v1 whole-record/Jaccard checks. V1 diagnostic scores must not be treated as an unbiased benchmark.
+
 ## Actual prepared data
 
 | Data | Images/pairs | Notes |
@@ -38,6 +42,17 @@ For other hardware, install the appropriate PyTorch build separately and omit th
 
 ## Regenerate the data
 
+Download the complete frozen v2 package without a sibling project:
+
+```bash
+python tools/download_ocr_release.py --complete \
+  --revision 9446db1014b1bc788c0eacbfba9bcd653392362d --output downloaded-data
+```
+
+The result includes all canonical/source/quarantine material in `downloaded-data/data/prepared`, plus fonts, attribution, reports and configuration. Without `--complete`, the helper downloads the smaller corrected training experiment into `downloaded-data/prepared`. Every download verifies archive/part checksums, row counts and attribution paths. See [public data files](https://huggingface.co/datasets/shah-bakhsh/BalDataset/tree/main/ocr/canonical).
+
+The complete ZIP is 491,991,763 bytes, SHA256 `c1ecdbfb0e1f09c7058d7d4c25a43d1e5cbc311107cbbc6e81a0d9286717c26a`. An independent Linux download reproduced that hash and passed the manifest, attribution and row-count checks. Receipts are in [reports/complete_data_release_v2.json](reports/complete_data_release_v2.json).
+
 Run from this project folder. `../BalCorpus-Final` is the existing frozen corpus, not a network dependency.
 
 ```powershell
@@ -49,16 +64,16 @@ The data release includes the exact Latin source documents and font license snap
 
 ## Fine-tune
 
-Use a manifest containing only `split=train` rows and keep evaluation IDs outside training. The derived full training manifest preserves the small diagnostic holdout. Maximum steps are explicit so a run cannot silently spend unlimited GPU time:
+Use a manifest containing only `split=train` rows and keep evaluation IDs outside training. The corrected v2 full training manifest contains 10,205 Arabic and 838 synthetic Latin records. It reserves 48 diagnostic examples (24 Arabic, including 12 longer images, and 24 synthetic Latin images), excluding 60 Arabic records related by exact images or text containment. Regenerate the frozen split with `python -m balocr.splits --data-root data/prepared --config config/experiment-v2.json`. All 11,043 training examples passed CPU encoding, assistant-prefix, complete-label roundtrip and patch-geometry checks; the longest contained 2,861 tokens. This does not establish successful GPU training. Maximum steps are explicit so a run cannot silently spend unlimited GPU time:
 
 ```bash
 CUDA_VISIBLE_DEVICES=1 python -m balocr.train \
   --manifest data/prepared/train.jsonl --data-root data/prepared \
-  --output runs/full --max-steps 2773 --accumulation 4 \
+  --output runs/full --max-steps 2761 --accumulation 4 \
   --max-pixels 401408 --allow-experimental-pascal
 ```
 
-Use the actual `ceil(full_training_records / 4)` from `training_input_report.json` for one nominal pass; the frozen full manifest has 11,090 records and therefore 2,773 nominal one-pass steps. Each run records the exact input hash, IDs actually seen, rejected over-length records, actual step count and loss history. Over-length labels are rejected whole, never silently truncated. Only the assistant transcription tokens contribute to loss. LoRA adapts decoder query/value projections with rank 8.
+Use the actual `ceil(full_training_records / 4)` from `training_input_report.json` for one nominal pass; the frozen full manifest has 11,043 records and therefore 2,761 nominal one-pass steps. Each run records the exact input hash, IDs actually seen, rejected over-length records, actual step count and loss history. Over-length labels are rejected whole, never silently truncated. Only the assistant transcription tokens contribute to loss. LoRA adapts decoder query/value projections with rank 8.
 
 ## Use the Python SDK
 
@@ -91,7 +106,7 @@ Metrics require every reference ID exactly once, score unfinished predictions ag
 
 ## Evaluation limits
 
-The archive does not identify original source books. Conservative date/duplicate grouping yielded **no defensible Arabic book-independent validation set**; canonical Arabic data is train-only. A separate 12-image Arabic diagnostic holdout is retained for the development experiment. It must not be described as a verified unseen-book benchmark. The Latin validation source is a held-out original document, but its images are synthetic. There are no real Latin scan evaluation pairs yet and no certified handwriting benchmark.
+The archive does not identify original source books. Conservative date/duplicate grouping yielded **no defensible Arabic book-independent validation set**; canonical Arabic data is train-only. The corrected v2 experiment reserves 24 Arabic diagnostic images, including 12 longer passages; the first v1 split had crop/paragraph leakage and is superseded. V2 excludes exact image matches, complete-text containment for records of at least 10 words, and five-word-shingle containment of at least 85% relative to the smaller record. It must not be described as a verified unseen-book benchmark. The Latin validation source is a held-out original document, but its images are synthetic. There are no real Latin scan evaluation pairs yet and no certified handwriting benchmark.
 
 Before production use, obtain document-level provenance, real Latin scans with exact transcriptions, and native review of representative unseen Arabic/Latin documents. Character/word error rates on that benchmark should determine whether to ship. General OCR leaderboard scores do not measure Balochi accuracy.
 
