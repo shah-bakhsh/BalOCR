@@ -1,0 +1,2 @@
+# The existing server's tested build. Install/reuse this CUDA 12.6 build first.
+torch==2.14.1+cu126

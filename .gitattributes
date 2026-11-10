@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Preserve downloaded font files and license evidence byte-for-byte.
+assets/fonts/* -text -whitespace

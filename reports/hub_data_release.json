@@ -1,0 +1,8 @@
+{
+  "repository": "shah-bakhsh/BalDataset",
+  "commit": "7225c1b7fca31f66df02d9bb8d4f643530c36326",
+  "manifest_public_http": 200,
+  "zip_sha256": "d5596bd7e227f48a2932283d7c61979719c3217a790f4191ad215604b8f2a76c",
+  "zip_bytes": 459999288,
+  "full_training_records": 11090
+}

@@ -1,0 +1,8 @@
+{
+  "image_pairs_verified": 11195,
+  "errors": [],
+  "ids_unique": true,
+  "native_reviewed_by_project": 0,
+  "train_count": 11103,
+  "validation_count": 92
+}

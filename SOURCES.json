@@ -1,0 +1,68 @@
+[
+  {
+    "source_id": "academy_ocr_v1",
+    "name": "Balochi OCR Ground Truth Dataset v1.0",
+    "publisher": "Balochi Academy NLP Ecosystem / Thaheer Production",
+    "url": "https://balochiacademy.com",
+    "license": "CC-BY-4.0",
+    "evidence": "data/prepared/source_metadata/README.txt; dataset_info.json",
+    "modifications": "Occurrence-based duplicate filename repair; invalid/conflicting pairs quarantined. Source text unchanged.",
+    "verification": "Provider human-review claim; zero independent native reviews by this project"
+  },
+  {
+    "id": "wowa_balochi_coastal",
+    "name": "WOWA — Balochi (Coastal)",
+    "url": "https://fd-repo.uni-bamberg.de/records/gyws0-g4218",
+    "creator": "Maryam Nourzaei",
+    "publisher": "Maryam Nourzaei",
+    "attribution": "Maryam Nourzaei",
+    "license": "CC-BY-4.0",
+    "license_evidence_url": "https://fd-repo.uni-bamberg.de/api/records/gyws0-g4218",
+    "provenance": "Fieldwork by Maryam Nourzaei c.2010 in Sedighzahi and Korsar, Dashtiyari, Iran. A from forthcoming Documenting Orality; B/C from Nourzaei 2017 pp435-544.",
+    "modifications": "Licensed transcription excerpt segmented into exact source spans and rendered into synthetic printed images."
+  },
+  {
+    "id": "wowa_balochi_koroshi",
+    "name": "WOWA — Balochi (Koroshi)",
+    "url": "https://fd-repo.uni-bamberg.de/records/gyws0-g4218",
+    "creator": "Maryam Nourzaei",
+    "publisher": "Maryam Nourzaei",
+    "attribution": "Maryam Nourzaei",
+    "license": "CC-BY-4.0",
+    "license_evidence_url": "https://fd-repo.uni-bamberg.de/api/records/gyws0-g4218",
+    "provenance": "c.2010 recordings from Deh Piyaleh/Shiraz and Marvdasht/Shiraz, Iran. A from Nourzaei2017 pp545-600; B from Nourzaei etal2015 pp162-177.",
+    "modifications": "Licensed transcription excerpt segmented into exact source spans and rendered into synthetic printed images."
+  },
+  {
+    "id": "wowa_balochi_turkmen",
+    "name": "WOWA — Balochi (Turkmen)",
+    "url": "https://fd-repo.uni-bamberg.de/records/gyws0-g4218",
+    "creator": "Geoffrey Haig; primary recordings/transcriptions Serge Axenov",
+    "publisher": "Geoffrey Haig; primary recordings/transcriptions Serge Axenov",
+    "attribution": "Geoffrey Haig; primary recordings/transcriptions Serge Axenov",
+    "license": "CC-BY-4.0",
+    "license_evidence_url": "https://fd-repo.uni-bamberg.de/api/records/gyws0-g4218",
+    "provenance": "c.1995 recordings from Mari region, Turkmenistan by Serge Axenov; excerpted Axenov2006 pp272-289 and291-294. A/B traditional narratives, C procedural description, D personal narrative.",
+    "modifications": "Licensed transcription excerpt segmented into exact source spans and rendered into synthetic printed images."
+  },
+  {
+    "id": "commercial_additions_v1:alas_balochi_latin",
+    "source_id": "orientalia_alas",
+    "source_url": "https://journals.uu.se/orientaliasuecana/article/view/644",
+    "attribution": "Azgar Lal; Taj Baloch; Carina Jahani. Alas. Orientalia Suecana 73, 66–70 (2024). CC BY 4.0.",
+    "original_author": "Azgar Lal",
+    "title": "Drégatén",
+    "source_license": "CC-BY-4.0",
+    "license_evidence_url": "https://journals.uu.se/orientaliasuecana/article/view/644"
+  },
+  {
+    "id": "commercial_additions_v1:beyond_wall_balochi_latin",
+    "source_id": "orientalia_beyond_wall",
+    "source_url": "https://journals.uu.se/orientaliasuecana/article/view/694",
+    "attribution": "Danish Dagh (Dánesh Dág); Noroz Hayat; Susan Weldon; Carina Jahani. Beyond the Wall. Orientalia Suecana 73, 212–218 (published 2025-01-09). CC BY 4.0.",
+    "original_author": "Dánesh Dág",
+    "title": "Diwálay poshtá",
+    "source_license": "CC-BY-4.0",
+    "license_evidence_url": "https://journals.uu.se/orientaliasuecana/article/view/694"
+  }
+]

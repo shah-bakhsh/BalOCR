@@ -1,0 +1,18 @@
+{
+  "source_documents": 11,
+  "source_whitespace_words": 17268,
+  "synthetic_images": 930,
+  "unique_text_spans": 465,
+  "split_counts": {
+    "train": 838,
+    "validation": 92
+  },
+  "exclusions": 0,
+  "real_latin_scan_pairs": 0,
+  "project_native_reviewed_pairs": 0,
+  "fonts": [
+    "NotoSans.ttf",
+    "NotoSerif.ttf"
+  ],
+  "limitation": "Synthetic printed images only; no claim of real scans, handwriting accuracy or new authored language data."
+}

@@ -1,0 +1,12 @@
+# Install a platform-appropriate PyTorch separately; reuse the remote CUDA build.
+transformers==5.22.2
+peft==0.21.2
+accelerate==1.15.0
+huggingface-hub==2.4.0
+tokenizers==0.23.3
+safetensors==0.8.0
+Pillow>=11.3,<14
+fonttools>=4.59,<5
+uharfbuzz==0.57.0
+freetype-py==2.5.1
+pytest>=8,<10

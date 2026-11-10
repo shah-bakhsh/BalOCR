@@ -1,0 +1,23 @@
+{
+  "source_archive": "balochi-ocr-dataset.zip",
+  "archive_sha256": "9ae333e072248c938a9e12dc291c8dfeaa35461cc15fbf6bab5c4799ef3e61f3",
+  "original_rows": 10374,
+  "available_pngs": 10372,
+  "repaired_occurrence_links": 4514,
+  "dimension_checked_pairs": 10372,
+  "retained_pairs": 10265,
+  "quarantine_reasons": {
+    "missing_image": 2,
+    "duplicate_image_and_text": 46,
+    "same_image_conflicting_transcriptions": 61
+  },
+  "unused_png_members": [],
+  "split_counts": {
+    "train": 10265
+  },
+  "retained_whitespace_words": 1893658,
+  "retained_characters": 8996099,
+  "source_license_declaration": "CC-BY-4.0 in source README and dataset_info.json",
+  "project_native_reviewed_pairs": 0,
+  "evaluation_limitation": "Date proxies and duplicate groups are not verified unseen-book holdouts; no real Latin scan benchmark yet."
+}
