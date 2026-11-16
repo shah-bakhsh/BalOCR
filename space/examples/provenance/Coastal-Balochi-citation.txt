@@ -1,0 +1,16 @@
+﻿Cite this data set as:
+
+Nourzaei, Maryam. 2021. Balochi (Coastal). In Haig, Geoffrey & Stilo, Donald & Doğan, Mahîr C. & Schiborr, N. (eds.), WOWA — Word Order in Western Asia: A spoken-language-based corpus for investigating areal effects in word order variation. Updated 5 September 2024. Bamberg: University of Bamberg. (DOI: 10.48564/unibafd-gyws0-g4218) (date accessed)
+
+@incollection{Nourzaei2021,
+ author = {Nourzaei, Maryam},
+ year = {2021},
+ title = {{Balochi (Coastal)}},
+ editor = {Haig, Geoffrey and Stilo, Donald and Doğan, Mahîr C. and Schiborr, N.},
+ booktitle = {{WOWA — Word Order in Western Asia}},
+ booksubtitle = {{A spoken-language-based corpus for investigating areal effects in word order variation}},
+ edition = {Updated 5 September 2024},
+ address = {Bamberg},
+ publisher = {University of Bamberg},
+ url = {10.48564/unibafd-gyws0-g4218}
+}

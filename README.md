@@ -2,6 +2,8 @@
 
 Balochi printed-text OCR in Arabic and Latin scripts. This project prepares real image/transcription pairs, adds explicitly synthetic printed Latin images, and adapts a pretrained vision model. It is a research development release; it does not promise perfect OCR or native-speaker certification.
 
+The [BalOCR testing tab on Hugging Face](https://huggingface.co/spaces/shah-bakhsh/balcorpus-balochi-demo) runs the pinned pretrained PaddleOCR-VL-1.6 model on CPU. It accepts printed Arabic and Latin crops and has an example of each script. Full BalOCR fine-tuning remains pending. The Space app and deployment recipes are in `space/`.
+
 ## Current experiment status
 
 The small 40-step hardware pilot completed. The first larger run stopped after 21 steps with a native projector shape error; fresh CUDA processes then failed to initialize and NVML listed only one of the previously available two GPUs. Isolating the healthy GPU by UUID also failed to allocate a CUDA tensor. Full training and release-quality evaluation are **incomplete**, and no trained BalOCR release weights have been published. See [training status](reports/training_status.json). The corrected v2 recipe below removes partial-text overlap missed by the v1 whole-record/Jaccard checks. V1 diagnostic scores must not be treated as an unbiased benchmark.

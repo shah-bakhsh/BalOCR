@@ -1,0 +1,10 @@
+# Preserve the working Space's Torch/ZeroGPU integration; OCR itself uses CPU.
+gradio==6.31.0
+spaces==0.51.3
+torch==2.12.1
+torchvision==0.27.1
+transformers==5.22.2
+tokenizers==0.23.3
+huggingface-hub==2.4.0
+safetensors==0.8.0
+Pillow>=11.3,<13

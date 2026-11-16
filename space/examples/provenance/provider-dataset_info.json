@@ -1,0 +1,35 @@
+{
+  "name": "balochi-ocr-ground-truth",
+  "version": "1.0",
+  "description": "Human-verified OCR ground truth for Balochi script — image-text pairs",
+  "language": [
+    "bal"
+  ],
+  "license": "cc-by-4.0",
+  "task": "image-to-text",
+  "modalities": [
+    "image",
+    "text"
+  ],
+  "num_examples": 10374,
+  "features": {
+    "id": "string",
+    "file_name": "string",
+    "text": "string",
+    "char_count": "int64",
+    "line_count": "int64",
+    "width": "int64",
+    "height": "int64"
+  },
+  "splits": {
+    "train": {
+      "num_examples": 10374
+    }
+  },
+  "image_format": "PNG",
+  "image_resolution_dpi": 300,
+  "image_colorspace": "grayscale",
+  "institution": "Balochi Academy",
+  "created_by": "Thaheer Production",
+  "created_at": "2026-05-01"
+}
